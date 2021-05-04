@@ -1,0 +1,21 @@
+[package]
+name = "incremental-testing"
+version = "0.1.0"
+authors = ["Alan Egerton <eggyal@gmail.com>"]
+edition = "2018"
+description = "Incremental test runner for Rust"
+repository = "https://github.com/eggyal/incremental-testing"
+license = "MIT"
+keywords = ["incremental", "test", "runner", "jit", "embed"]
+categories = ["development-tools::testing"]
+publish = false
+
+[dependencies]
+abi_stable = "0.9.3"
+async-std = { version = "1.9.0", features = ["unstable"] }
+coverageinfo-iface = { path = "coverageinfo-iface" }
+futures = "0.3.14"
+libc = "0.2.94"
+
+[workspace]
+
